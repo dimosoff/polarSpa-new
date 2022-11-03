@@ -54,7 +54,9 @@ if (isElem('header .bro-menu')) {
 		const swiper = slider(sliderNode, {
 			effect: "coverflow",
 			grabCursor: true,
+			autoplay: true,
 			speed: 1200,
+			autoHeight: false,
 			spaceBetween: 300,
 			coverflowEffect: {
 				rotate: 80,
@@ -66,6 +68,42 @@ if (isElem('header .bro-menu')) {
 				clickable: true,
 			}
 		});
+
+		let currentResolutionState = "",
+			mobileSlides = additionMobileSlides(sliderNode.swiper);
+
+    slideChanger(sliderNode.swiper);
+		sliderNode.swiper.on('resize', function (slider) {
+			slideChanger(slider);
+		});
+
+    function slideChanger(slider) {
+      if (currentResolutionState !== "desktop" && window.innerWidth >= 840) {
+				additionMobileSlides(slider).map((e) => {
+					e.style.display = 'none';
+					e.setAttribute('aria-hidden', 'true');
+					e.remove();
+				});
+        currentResolutionState = "desktop";
+      } else if (currentResolutionState !== "mobile" && window.innerWidth < 840) {
+				slider.addSlide(1, mobileSlides);
+        additionMobileSlides(slider).map((e) => {
+					e.style.display = '';
+					e.setAttribute('aria-hidden', 'false');
+				});
+        currentResolutionState = "mobile";
+      }
+    }
+
+		function additionMobileSlides(slider) {
+			let hiddenSlides = [];
+			slider.slides.forEach((item) => {
+				if (item.getAttribute('aria-hidden')) {
+					hiddenSlides.push(item);
+				}
+			});
+			return hiddenSlides;
+		}
 	}
 }());
 
