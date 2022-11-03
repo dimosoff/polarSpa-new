@@ -1,3 +1,170 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~
-FOOTER
-~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*==================== FOOTER ====================*/
+.footer {
+	margin-top: auto;
+	padding-top: 28px;
+	font-size: 14px;
+	line-height: (22/14);
+	color: #fff;
+	background-color: #333333;
+
+	a {
+		transition: color $duration;
+
+		&:hover {
+			color: var(--color-primary-lig);
+		}
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		flex-shrink: 0;
+		max-width: 119px;
+	}
+
+	&__menu {
+		margin-right: -3px;
+		flex-wrap: wrap;
+		padding-left: 30px;
+		font-size: 12px;
+
+		& > .menu__item {
+			margin-right: getEm(7, 12);
+
+			&:last-child {
+				.menu__link {
+					padding-right: 0;
+				}
+			}
+		}
+
+		& > .menu__item > .menu__link {
+			padding: getEm(5, 12);
+			text-transform: uppercase;
+
+			&:hover {
+				color: var(--color-primary-lig);
+			}
+		}
+	}
+
+	&__middle {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		padding: 16px 0 29px;
+		justify-content: space-between;
+		column-gap: 30px;
+		row-gap: getEm(17, 12);
+	}
+
+	/*footer subscrip*/
+	&__subscrip {
+		--air-l: 17px;
+		--air-b: 12px;
+		@include row-flex;
+		align-items: center;
+		padding-bottom: 15px;
+
+		&-title,
+		&-form {
+			@include col;
+		}
+
+		&-title {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		&-form {
+			display: flex;
+			align-items: center;
+		}
+
+		&-b-input {
+			--h: 35px;
+			--fz: 10px;
+			margin: 0 15px 0 0;
+
+			input {
+				padding: 0 15px 0 17px;
+				color: inherit;
+				background-color: transparent;
+				border-color: #818181;
+
+				&::placeholder {
+					color: #818181;
+				}
+			}
+		}
+
+		&-submit {
+			--h: #{getEm(35, 12)};
+			padding: 0 getEm(36, 12);
+		}
+	}
+
+	/*footer bottom*/
+	&__bottom {
+		padding: 9px 0;
+		background-color: #2a2c2b;
+	}
+
+	@include table {
+		&__middle {
+			grid-template-columns: auto auto;
+			justify-content: flex-start;
+			column-gap: 80px;
+		}
+	}
+
+	@include mobile {
+		/*header top*/
+		&__top {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+
+		&__menu {
+			padding: 0 0 20px;
+		}
+
+		/*header middle*/
+		&__middle {
+			column-gap: 30px;
+			padding: 20px 0 24px;
+		}
+	}
+
+	@include to(600) {
+		&__middle {
+			grid-template-columns: auto;
+		}
+
+		&__subscrip {
+			&-form {
+				width: 100%;
+			}
+
+			&-b-input {
+				flex: 1;
+			}
+
+			&-submit {
+				padding: 0 32px;
+			}
+		}
+
+		&__bottom {
+			text-align: center;
+		}
+	}
+
+	@include tel {
+		font-size: 12px;
+		line-height: (18/12);
+	}
+}

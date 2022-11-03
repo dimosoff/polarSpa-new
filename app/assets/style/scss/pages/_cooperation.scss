@@ -1,0 +1,46 @@
+/*==================== COOPERATION ====================*/
+.cooperation-pg {
+	.companyDesc-b {
+		margin-bottom: 60px;
+	}
+
+	.advantages-b {
+		&__item {
+		}
+	}
+
+	.notify-note {
+		margin: 45px 0 25px;
+	}
+
+	.application-b {
+		&:nth-last-of-type(1) {
+			margin-top: 25px;
+		}
+	}
+
+	@include desctop-min {
+		.companyDesc-b {
+			margin-bottom: 49px;
+		}
+	}
+
+	@include mobile {
+		.notify-note {
+			margin: 20px 0 10px;
+		}
+		.companyDesc-b {
+			margin-bottom: 39px;
+
+			[class*="title-"] {
+				margin-bottom: 17px;
+			}
+		}
+
+		.application-b {
+			&:nth-last-of-type(1) {
+				margin-top: 5px;
+			}
+		}
+	}
+}

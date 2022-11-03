@@ -1,0 +1,27 @@
+/*==================== CATALOG ====================*/
+.catalog-pg {
+	.companyDesc-b {
+		margin-top: 60px;
+		&__item {
+			padding: 64px 0 83px;
+		}
+	}
+
+	@include desctop-min {
+		.companyDesc-b {
+			margin-top: 40px;
+			&__item {
+				padding: 40px 0 70px;
+			}
+		}
+	}
+
+	@include mobile {
+		.companyDesc-b {
+			margin-top: 18px;
+			&__item {
+				padding: 26px 0 54px;
+			}
+		}
+	}
+}

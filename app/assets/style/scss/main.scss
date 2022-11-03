@@ -1,16 +1,36 @@
 @import "fonts";
+@import "./base/breakpoints";
 @import "./base/variables";
 @import "./mixsins/mixsins";
 @import "./base/nullstyle";
+@import "./base/spacings";
 @import "./base/settings";
 @import "./base/grid";
+@import "./../css/libraries/aos";
 
 html,
 body {
-    font-family: var(--fm-1);
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
+	font-family: var(--fm-1);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--color-text);
+	scrollbar-color: var(--scroll-thumb-color) var(--scroll-bar-color); /* «цвет ползунка» «цвет полосы скроллбара» */
+	scrollbar-width: thin; /* толщина */
+}
+
+::-webkit-scrollbar {
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #606060;
+	border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: lighten(#606060, 10%);
 }
 
 .body {
@@ -18,7 +38,7 @@ body {
 	min-height: 100vh;
 }
 
-.global-wrap {
+.page {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -26,27 +46,111 @@ body {
 
 /*--------------------------------Common--------------------------------*/
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    max-width: 1156px;
+	padding: 0 30px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	max-width: 1230px;
 
-    @include table {
-        padding-right: 20px;
-        padding-left: 20px;
-        max-width: 768px;
-    }
+	@include table {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 
-    @include mobile {
-        padding-right: 10px;
-        padding-left: 10px;
-        max-width: 100%;
-    }
+	@include mobile {
+		padding-right: 10px;
+		padding-left: 10px;
+		max-width: 100%;
+	}
 }
 
+.title-wrap {
+	margin-top: -30px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+.title {
+	$this: &;
+	text-transform: uppercase;
+	text-align: center;
+
+	b {
+		font-weight: 600;
+		color: var(--color-primary);
+	}
+
+	&--bg {
+		padding: getEm(10, 18) 1em getEm(9, 18);
+		background-color: #f6f8f8;
+	}
+}
+
+.title-1,
+.title-2,
+.title-3 {
+	@extend .title;
+}
+
+.title-1 {
+	font: 24px /#{(32/24)} var(--fm-1);
+	@include desctop-min {
+		font-size: 26px;
+	}
+
+	@include mobile {
+		font-size: 18px;
+	}
+}
+
+.title-2 {
+	font: 24px /#{(32/24)} var(--fm-1);
+	@include desctop-min {
+		font-size: 26px;
+	}
+
+	@include desctop-min {
+		font-size: 22px;
+	}
+
+	@include mobile {
+		font-size: 18px;
+	}
+}
+
+.title-3 {
+	font: 18px /#{(32/18)} var(--fm-1);
+
+	@include mobile {
+		font-size: 16px;
+	}
+}
+
+.text {
+	font-size: 16px;
+	line-height: (25/26);
+}
+
+.sci-b {
+	margin-top: auto;
+
+	& ~ footer {
+		margin-top: 0;
+	}
+}
+
+@import "./components/interface";
 @import "./components/btns";
 @import "./components/blocks";
 @import "./components/header";
 @import "./components/footer";
+@import "./pages/index";
+@import "./pages/blog";
+@import "./pages/contacts";
+@import "./pages/cooperation";
+@import "./pages/catalog";
+@import "./pages/product-card";
+@import "./pages/about-us";
+@import "./pages/notify";
 
 /*--------------------------------Other--------------------------------*/

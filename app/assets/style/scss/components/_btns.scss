@@ -1,3 +1,196 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~
-COMMON BUTTON
-~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*==================== COMON BUTTON ====================*/
+%baseBtn {
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 24px;
+	line-height: (15/12);
+}
+
+%baseSize {
+	--h: 35px;
+	--fz: 12px;
+
+	height: var(--h);
+	font-size: var(--fz);
+	border-radius: calc(var(--h) / 2);
+}
+
+.btn {
+	@extend %baseBtn;
+	@extend %baseSize;
+	position: relative;
+	z-index: 1;
+	font-weight: 500;
+	color: #fff;
+	overflow: hidden;
+
+	&:hover::before {
+		left: -100%;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 201%;
+		height: 101%;
+		background: linear-gradient(270deg, #004231 0%, #004231 50%, #1a5546 75%, #316659 100%);
+		transition: left 0.3s;
+		z-index: -1;
+		transition: left $duration;
+		will-change: left;
+	}
+}
+
+.btn-t {
+	--h: 50px;
+	--fz: 16px;
+	@extend %baseBtn;
+	@extend %baseSize;
+
+	padding: 0 30px;
+	font-weight: 700;
+	color: var(--color-primary);
+	border: 3px solid var(--color-primary);
+	transition: background-color $duration, color $duration;
+
+	&:hover {
+		color: #fff;
+		background-color: var(--color-primary);
+	}
+}
+
+.btn-link {
+	transition: all 0.2s;
+	
+	&.active {
+		font-weight: 700;
+		color: var(--color-primary);
+	}
+
+	&:hover {
+		color: var(--color-primary);
+	}
+
+	&--style_2 {
+		font-style: italic;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.btn-go {
+	$this: &;
+	@extend %baseBtn;
+	align-items: center;
+	padding: 0;
+	font: italic 18px /#{(22/18)} var(--fm-1);
+	color: var(--color-primary);
+	transition: color $duration;
+
+	&:hover {
+		color: var(--color-primary-lig);
+
+		svg {
+			transform: translateX(0.5em);
+		}
+	}
+
+	svg {
+		display: inline-block;
+		margin-left: getEm(17, 18);
+		width: getEm(36, 18);
+		height: getEm(36, 18);
+		fill: currentColor;
+		transition: transform $duration ease-out;
+	}
+
+	&--no-text {
+		width: 48px;
+		height: 48px;
+
+		&:hover {
+			svg {
+				transform: scale(1.05);
+			}
+		}
+
+		svg {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+/*v-up*/
+.v-up {
+	cursor: pointer;
+	position: fixed;
+	right: 30px;
+	bottom: 155px;
+	z-index: 250;
+	width: 60px;
+	height: 60px;
+	background-color: var(--color-primary);
+	border-radius: 50%;
+	opacity: 0;
+	pointer-events: none;
+	transition: background-color $duration, opacity $duration;
+
+	&.active {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	&:hover {
+		background-color: var(--color-primary);
+
+		&::before,
+		&::after {
+			background-color: #fff;
+		}
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 60%;
+		left: 40%;
+		width: 35%;
+		height: 7%;
+		background-color: #fff;
+		transition: background-color $duration;
+	}
+
+	&::before {
+		border-radius: 0px 3px 3px 0;
+		transform-origin: right top;
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		margin-left: -15.4%;
+		border-radius: 3px 0 0 3px;
+		transform-origin: left top;
+		transform: rotate(-45deg);
+	}
+
+	@include desctop-min {
+		width: 58px;
+		height: 58px;
+	}
+
+	@include mobile {
+		right: 20px;
+		width: 50px;
+		height: 50px;
+	}
+}

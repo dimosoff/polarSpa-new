@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="ArtBro">
+	<title>Карточка товара</title>
+	<!-- swiper css -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/swiper-bundle.min.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="./assets/style/css/style.css">
+</head>
+
+<body>
+	<div class="page product-fl-pg">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__container container">
+				<!-- header aside -->
+				<div class="header__aside">
+					<!-- logo -->
+					<a class="header__logo logo" href="#">
+						<img src="./assets/img/logo.png" alt="logo">
+					</a>
+				</div>
+				<!-- header body -->
+				<div class="header__body">
+					<!-- header top -->
+					<div class="header__top">
+						<!-- search -->
+						<form class="header__search  search">
+							<label class="search__inner">
+								<input class="search__input" type="search" placeholder="Поиск">
+								<button class="search__submit" type="submit" aria-label="Поиск">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#loop-ic"></use>
+									</svg>
+								</button>
+							</label>
+						</form>
+						<!-- firm info -->
+						<div class="header__firm-info  firm-info firm-info--clock">
+							<svg class="firm-info__ic">
+								<use xlink:href="./assets/img/icons/sprite.svg#clock-ic_fill">
+								</use>
+							</svg>
+							ПН-ПТ 09:00-19:00
+						</div>
+						<!-- firm info -->
+						<a class="header__firm-info  firm-info firm-info--mail" href="mailto:info@polarspa.ru">
+							<svg class="firm-info__ic">
+								<use xlink:href="./assets/img/icons/sprite.svg#mail-ic_fill">
+								</use>
+							</svg>
+							info@polarspa.ru
+						</a>
+						<!-- hamburger -->
+						<button class="header__hamburger  hamburger" type="button" aria-label="Открыть мобильное меню">
+							<span></span>
+						</button>
+					</div>
+					<!-- header bottom -->
+					<div class="header__bottom">
+						<!-- burger -->
+						<div class="header__burger">
+							<div class="header__burger-inner">
+								<!-- navigation -->
+								<nav class="header__nav  bro-menu">
+									<ul class="header__menu  menu bro-menu__container">
+										<li class="menu__item menu__item--drop">
+											<button class="menu__item-toggle hamburger" type="button"
+												aria-label="Открыть подменю">
+												<span></span>
+											</button>
+											<a class="menu__link" href="#"><span>КАТАЛОГ</span></a>
+											<ul class="menu__submenu">
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Ламинат</span>
+														<span class="menu__arr">
+															<svg>
+																<use
+																	xlink:href="./assets/img/icons/sprite.svg#arr-tr-right">
+																</use>
+															</svg>
+														</span>
+													</a>
+													<ul class="menu__submenu">
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Tarkett</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span> Ламинат Egger</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Kastamonu</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Classen</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Ideal</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Quick Step</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Паркетная доска</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Виниловые полы</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Пробковое покрытие</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Штучный паркет</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Терассная доска</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Дизайнерские полы</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Сопутствующие товары</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"><span>СОТРУДНИЧЕСТВО</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>ПОРТФОЛИО</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"><span>О КОМПАНИИ</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"><span>БЛОГ</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"><span>КОНТАКТЫ</span></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<!-- msgr -->
+						<div class="header__msgr msgr">
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--phone" href="tel:89167591148">
+								8&nbsp;916&nbsp;759&nbsp;11&nbsp;48
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- BREAD CRUMB -->
+		<div class="bread-crumb">
+			<div class="bread-crumb__container container">
+				<a href="#" class="bread-crumb__item">Главная</a>
+				<a href="#" class="bread-crumb__item">Каталог</a>
+				<span class="bread-crumb__item">Купель композитная квадратная Quattro cold</span>
+			</div>
+		</div>
+		<div class="content-wrap">
+			<!-- MAIN -->
+			<main>
+				<div class="container">
+					<div class="title-wrap">
+						<h1 class="title-1" data-aos="fade-down"><b>композитная Купель</b> ELITE Quattro 200</h1>
+					</div>
+					<div class="product-note">
+						<p>Угол наклона спинки POLAR SPA составляет 10 градусов, что является самым удобным положением
+							спины для максимального ее расслабления. </p>
+					</div>
+					<!-- product -->
+					<div class="product">
+						<div class="product__row">
+							<!-- gallery product -->
+							<div class="product__gallery gallery">
+								<!-- full imgage slider -->
+								<div class="gallery__sliderWrap slider-wrap">
+									<div class="gallery__slider swiper">
+										<div class="swiper-wrapper">
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/components/product-card/img-1.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-1.jpg" alt="">
+											</a>
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/pages/productCard/img-2.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-2.jpg" alt="">
+											</a>
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/components/product-card/img-3.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-3.jpg" alt="">
+											</a>
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/components/product-card/img-4.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-4.jpg" alt="">
+											</a>
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/components/product-card/img-5.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-5.jpg" alt="">
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- thumbs slider -->
+								<div class="gallery__thumbsWrap">
+									<div class="gallery__thumbs swiper">
+										<div class="swiper-wrapper">
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-1.jpg" alt="">
+											</div>
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-2.jpg" alt="">
+											</div>
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-3.jpg" alt="">
+											</div>
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-4.jpg" alt="">
+											</div>
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-5.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- details product -->
+							<form class="product__details" action="#">
+								<div class="product__availability availability-label availability-label--available">
+									<svg>
+										<use xlink:href="./assets/img/components/availability/sprite.svg#there"></use>
+									</svg>
+									В наличии
+								</div>
+								<div class="product__article">
+									Артикул: <span class="product__article-val">8505260</span>
+								</div>
+								<!-- propertys -->
+								<div class="product__propertys product-propertys">
+									<div class="product-propertys__item">
+										<svg>
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#height">
+											</use>
+										</svg>
+										<span>110 см</span>
+									</div>
+									<div class="product-propertys__item">
+										<svg>
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#width">
+											</use>
+										</svg>
+										<span>160 см</span>
+									</div>
+									<div class="product-propertys__item">
+										<svg>
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#human">
+											</use>
+										</svg>
+										<span>2-4 чел.</span>
+									</div>
+									<div class="product-propertys__item">
+										<svg>
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#capacity">
+											</use>
+										</svg>
+										<span>900 л</span>
+									</div>
+									<div class="product-propertys__item" style="color: var(--color-primary);">
+										<svg style="fill: var(--color-primary);">
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#bake">
+											</use>
+										</svg>
+										<span>Печь</span>
+									</div>
+								</div>
+								<div class="product__accessories product__checkboxes checkboxes">
+									<div class="checkboxes__title">Дополнительные опциии и аксесуары:</div>
+									<div class="checkboxes__list">
+										<div class="checkboxes__col">
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="airmassage" checked>
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#airmassage">
+														</use>
+													</svg>
+													Аэромассаж
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="chromotherapy">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#сhromotherapy">
+														</use>
+													</svg>
+													Хромотерапия
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="insulation">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#insulation">
+														</use>
+													</svg>
+													Утепление композитного вкладыша
+												</span>
+											</label>
+										</div>
+										<div class="checkboxes__col">
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="bake" checked="">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#bake">
+														</use>
+													</svg>
+													Печь
+												</span>
+											</label>
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="termalmugs">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#termalmugs">
+														</use>
+													</svg>
+													Термокрышки
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="tent">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#tent">
+														</use>
+													</svg>
+													Тент
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="shelf">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#shelf">
+														</use>
+													</svg>
+													Полка</span>
+											</label>
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="ladder">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#ladder">
+														</use>
+													</svg>
+													Лестница (3 ступени)
+												</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- Отделка -->
+								<div class="product__finishing product__checkboxes checkboxes">
+									<div class="checkboxes__list">
+										<label class="b-radio b-radio--img">
+											<input class="b-radio__input" type="radio" name="finishing"
+												value="termososna" checked="">
+											<span class="b-radio__custom">
+												<img src="./assets/img/components/b-checkbox/termososna.jpg"
+													alt="термососна">
+											</span>
+											<span class="b-radio__content">Термососна</span>
+										</label>
+										<label class="b-radio b-radio--img">
+											<input class="b-radio__input" type="radio" name="finishing"
+												value="termoyasen">
+											<span class="b-radio__custom">
+												<img src="./assets/img/components/b-checkbox/termoyasen.jpg"
+													alt="Термоясень">
+											</span>
+											<span class="b-radio__content">Термоясень</span>
+										</label>
+									</div>
+								</div>
+								<div class="product__actionBox">
+									<div class="product__price">150 000 RYB</div>
+									<button class="product__buy btn" type="button" aria-label="Купить">Купить</button>
+								</div>
+							</form>
+						</div>
+						<!-- tabs -->
+						<div class="product__tabs b-tabs">
+							<!-- nav -->
+							<div class="b-tabs__links">
+								<a class="b-tabs__link active" href="#content-1">Характеристики</a>
+								<a class="b-tabs__link" href="#content-2">Комплектация</a>
+								<a class="b-tabs__link" href="#content-3">Документация</a>
+							</div>
+							<!-- content block -->
+							<div class="b-tabs__content">
+								<!-- pane -->
+								<div class="b-tabs__pane active defaultText" id="content-1">
+									<p>
+										Угол наклона спинки POLAR SPA составляет 10 градусов, что является самым удобным
+										положением спины для максимального ее расслабления.
+									</p>
+									<div class="table-1">
+										<table>
+											<tbody>
+												<tr>
+													<td>Параметры 1</td>
+													<td>123</td>
+												</tr>
+												<tr>
+													<td>Параметры 2</td>
+													<td>123</td>
+												</tr>
+												<tr>
+													<td>Параметры 3</td>
+													<td>12309</td>
+												</tr>
+												<tr>
+													<td>Параметры 4</td>
+													<td>123</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- pane -->
+								<div class="b-tabs__pane" id="content-2">
+									<!-- table -->
+									<div class="tableDetails tableDetails--small">
+										<!-- table row -->
+										<div class="tableDetails__row">
+											<div class="tableDetails__row-col">
+												<p>Бренд</p>
+											</div>
+											<div class="tableDetails__row-col">
+												<p>Ter Hurne</p>
+											</div>
+										</div>
+										<!-- table row -->
+										<div class="tableDetails__row">
+											<div class="tableDetails__row-col">
+												<p>Коллекция</p>
+											</div>
+											<div class="tableDetails__row-col">
+												<p>Dureco</p>
+											</div>
+										</div>
+										<!-- table row -->
+										<div class="tableDetails__row">
+											<div class="tableDetails__row-col">
+												<p>Страна производства</p>
+											</div>
+											<div class="tableDetails__row-col">
+												<p>Германия</p>
+											</div>
+										</div>
+										<!-- table row -->
+										<div class="tableDetails__row">
+											<div class="tableDetails__row-col">
+												<p>Свойства</p>
+											</div>
+											<div class="tableDetails__row-col">
+												<p>антибактериальное, антистатическое, влагостойкое</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- pane -->
+								<div class="b-tabs__pane" id="content-3">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vero voluptatem
+									quis fugit voluptatibus magnam veritatis nam sapiente impedit ut, obcaecati
+									suscipit. Suscipit unde amet corporis nisi molestias non eos?
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- product -->
+					<div class="product">
+						<div class="product__row">
+							<!-- gallery product -->
+							<div class="product__gallery gallery">
+								<!-- full imgage slider -->
+								<div class="gallery__sliderWrap slider-wrap">
+									<div class="gallery__slider swiper">
+										<div class="swiper-wrapper">
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/components/product-card/img-1.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-1.jpg" alt="">
+											</a>
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/pages/productCard/img-2.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-2.jpg" alt="">
+											</a>
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/components/product-card/img-3.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-3.jpg" alt="">
+											</a>
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/components/product-card/img-4.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-4.jpg" alt="">
+											</a>
+											<a class="gallery__slider-slide swiper-slide"
+												href="./assets/img/components/product-card/img-5.jpg"
+												data-fslightbox="prodGallery">
+												<img src="./assets/img/components/product-card/img-5.jpg" alt="">
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- thumbs slider -->
+								<div class="gallery__thumbsWrap">
+									<div class="gallery__thumbs swiper">
+										<div class="swiper-wrapper">
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-1.jpg" alt="">
+											</div>
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-2.jpg" alt="">
+											</div>
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-3.jpg" alt="">
+											</div>
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-4.jpg" alt="">
+											</div>
+											<div class="gallery__thumbs-item swiper-slide">
+												<img src="./assets/img/components/product-card/img-5.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- details product -->
+							<form class="product__details" action="#">
+								<div class="product__availability availability-label availability-label--available">
+									<svg>
+										<use xlink:href="./assets/img/components/availability/sprite.svg#there"></use>
+									</svg>
+									В наличии
+								</div>
+								<div class="product__article">
+									Артикул: <span class="product__article-val">8505260</span>
+								</div>
+								<!-- propertys -->
+								<div class="product__propertys product-propertys">
+									<div class="product-propertys__item">
+										<svg>
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#height">
+											</use>
+										</svg>
+										<span>110 см</span>
+									</div>
+									<div class="product-propertys__item">
+										<svg>
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#width">
+											</use>
+										</svg>
+										<span>160 см</span>
+									</div>
+									<div class="product-propertys__item">
+										<svg>
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#human">
+											</use>
+										</svg>
+										<span>2-4 чел.</span>
+									</div>
+									<div class="product-propertys__item">
+										<svg>
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#capacity">
+											</use>
+										</svg>
+										<span>900 л</span>
+									</div>
+									<div class="product-propertys__item" style="color: var(--color-primary);">
+										<svg style="fill: var(--color-primary);">
+											<use xlink:href="./assets/img/components/product-card/sprite.svg#bake">
+											</use>
+										</svg>
+										<span>Печь</span>
+									</div>
+								</div>
+								<div class="product__accessories product__checkboxes checkboxes">
+									<div class="checkboxes__title">Дополнительные опциии и аксесуары:</div>
+									<div class="checkboxes__list">
+										<div class="checkboxes__col">
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="airmassage" checked>
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#airmassage">
+														</use>
+													</svg>
+													Аэромассаж
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="chromotherapy">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#сhromotherapy">
+														</use>
+													</svg>
+													Хромотерапия
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="insulation">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#insulation">
+														</use>
+													</svg>
+													Утепление композитного вкладыша
+												</span>
+											</label>
+										</div>
+										<div class="checkboxes__col">
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="bake" checked="">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#bake">
+														</use>
+													</svg>
+													Печь
+												</span>
+											</label>
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="termalmugs">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#termalmugs">
+														</use>
+													</svg>
+													Термокрышки
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="tent">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#tent">
+														</use>
+													</svg>
+													Тент
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="shelf">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#shelf">
+														</use>
+													</svg>
+													Полка</span>
+											</label>
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="ladder">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#ladder">
+														</use>
+													</svg>
+													Лестница (3 ступени)
+												</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- Отделка -->
+								<div class="product__finishing product__checkboxes checkboxes">
+									<div class="checkboxes__list">
+										<label class="b-radio b-radio--img">
+											<input class="b-radio__input" type="radio" name="finishing"
+												value="termososna" checked="">
+											<span class="b-radio__custom">
+												<img src="./assets/img/components/b-checkbox/termososna.jpg"
+													alt="термососна">
+											</span>
+											<span class="b-radio__content">Термососна</span>
+										</label>
+										<label class="b-radio b-radio--img">
+											<input class="b-radio__input" type="radio" name="finishing"
+												value="termoyasen">
+											<span class="b-radio__custom">
+												<img src="./assets/img/components/b-checkbox/termoyasen.jpg"
+													alt="Термоясень">
+											</span>
+											<span class="b-radio__content">Термоясень</span>
+										</label>
+									</div>
+								</div>
+								<div class="product__actionBox">
+									<div class="product__price">150 000 RYB</div>
+									<button class="product__buy btn" type="button" aria-label="Купить">Купить</button>
+								</div>
+							</form>
+						</div>
+						<!-- tabs -->
+						<div class="product__tabs b-tabs">
+							<!-- nav -->
+							<div class="b-tabs__links">
+								<a class="b-tabs__link active" href="#content-1">Характеристики</a>
+								<a class="b-tabs__link" href="#content-2">Комплектация</a>
+								<a class="b-tabs__link" href="#content-3">Документация</a>
+							</div>
+							<!-- content block -->
+							<div class="b-tabs__content">
+								<!-- pane -->
+								<div class="b-tabs__pane active defaultText" id="content-1">
+									<p>
+										Угол наклона спинки POLAR SPA составляет 10 градусов, что является самым удобным
+										положением спины для максимального ее расслабления.
+									</p>
+									<div class="table-1">
+										<table>
+											<tbody>
+												<tr>
+													<td>Параметры 1</td>
+													<td>123</td>
+												</tr>
+												<tr>
+													<td>Параметры 2</td>
+													<td>123</td>
+												</tr>
+												<tr>
+													<td>Параметры 3</td>
+													<td>12309</td>
+												</tr>
+												<tr>
+													<td>Параметры 4</td>
+													<td>123</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- pane -->
+								<div class="b-tabs__pane" id="content-2">
+									<!-- table -->
+									<div class="tableDetails tableDetails--small">
+										<!-- table row -->
+										<div class="tableDetails__row">
+											<div class="tableDetails__row-col">
+												<p>Бренд</p>
+											</div>
+											<div class="tableDetails__row-col">
+												<p>Ter Hurne</p>
+											</div>
+										</div>
+										<!-- table row -->
+										<div class="tableDetails__row">
+											<div class="tableDetails__row-col">
+												<p>Коллекция</p>
+											</div>
+											<div class="tableDetails__row-col">
+												<p>Dureco</p>
+											</div>
+										</div>
+										<!-- table row -->
+										<div class="tableDetails__row">
+											<div class="tableDetails__row-col">
+												<p>Страна производства</p>
+											</div>
+											<div class="tableDetails__row-col">
+												<p>Германия</p>
+											</div>
+										</div>
+										<!-- table row -->
+										<div class="tableDetails__row">
+											<div class="tableDetails__row-col">
+												<p>Свойства</p>
+											</div>
+											<div class="tableDetails__row-col">
+												<p>антибактериальное, антистатическое, влагостойкое</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- pane -->
+								<div class="b-tabs__pane" id="content-3">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vero voluptatem
+									quis fugit voluptatibus magnam veritatis nam sapiente impedit ut, obcaecati
+									suscipit. Suscipit unde amet corporis nisi molestias non eos?
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- similar products -->
+				<section class="related-products-b section">
+					<div class="related-products-b__container container">
+						<div class="title-wrap">
+							<h2 class="title-1 section__title" data-aos="fade-down"><b>Похожие</b> товары</h2>
+						</div>
+					</div>
+					<!-- slider wrap -->
+					<div class="hiding-slider-wrap slider-wrap">
+						<div class="container">
+							<!-- slider -->
+							<div class="hiding-slider swiper">
+								<div class="swiper-wrapper">
+									<!-- card -->
+									<div class="product-card hiding-slider__slide swiper-slide">
+										<a class="product-card__img" href="#">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-1.png" alt="">
+											</picture>
+										</a>
+										<div class="product-card__title">
+											Композитная Купель ELITE 220
+										</div>
+										<!-- propertys -->
+										<div class="product-card__propertys product-propertys">
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#height">
+													</use>
+												</svg>
+												<span>110 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#width">
+													</use>
+												</svg>
+												<span>160 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#human">
+													</use>
+												</svg>
+												<span>2-4 чел.</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#capacity">
+													</use>
+												</svg>
+												<span>900 л</span>
+											</div>
+											<div class="product-propertys__item" style="color: var(--color-primary);">
+												<svg style="fill: var(--color-primary);">
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#bake">
+													</use>
+												</svg>
+												<span>Печь</span>
+											</div>
+										</div>
+										<div class="product-card__bottom">
+											<div class="product-card__price">
+												150 000 RYB
+											</div>
+											<button class="product-card__buy btn" type="button"
+												aria-label="Купить">Купить</button>
+										</div>
+									</div>
+									<!-- card -->
+									<div class="product-card hiding-slider__slide swiper-slide">
+										<a class="product-card__img" href="#">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-1.png" alt="">
+											</picture>
+										</a>
+										<div class="product-card__title">
+											Композитная Купель ELITE 220
+										</div>
+										<!-- propertys -->
+										<div class="product-card__propertys product-propertys">
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#height">
+													</use>
+												</svg>
+												<span>110 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#width">
+													</use>
+												</svg>
+												<span>160 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#human">
+													</use>
+												</svg>
+												<span>2-4 чел.</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#capacity">
+													</use>
+												</svg>
+												<span>900 л</span>
+											</div>
+											<div class="product-propertys__item" style="color: var(--color-primary);">
+												<svg style="fill: var(--color-primary);">
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#bake">
+													</use>
+												</svg>
+												<span>Печь</span>
+											</div>
+										</div>
+										<div class="product-card__bottom">
+											<div class="product-card__price">
+												150 000 RYB
+											</div>
+											<button class="product-card__buy btn" type="button"
+												aria-label="Купить">Купить</button>
+										</div>
+									</div>
+									<!-- card -->
+									<div class="product-card hiding-slider__slide swiper-slide">
+										<a class="product-card__img" href="#">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-1.png" alt="">
+											</picture>
+										</a>
+										<div class="product-card__title">
+											Композитная Купель ELITE 220
+										</div>
+										<!-- propertys -->
+										<div class="product-card__propertys product-propertys">
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#height">
+													</use>
+												</svg>
+												<span>110 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#width">
+													</use>
+												</svg>
+												<span>160 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#human">
+													</use>
+												</svg>
+												<span>2-4 чел.</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#capacity">
+													</use>
+												</svg>
+												<span>900 л</span>
+											</div>
+											<div class="product-propertys__item" style="color: var(--color-primary);">
+												<svg style="fill: var(--color-primary);">
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#bake">
+													</use>
+												</svg>
+												<span>Печь</span>
+											</div>
+										</div>
+										<div class="product-card__bottom">
+											<div class="product-card__price">
+												150 000 RYB
+											</div>
+											<button class="product-card__buy btn" type="button"
+												aria-label="Купить">Купить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- related products -->
+				<section class="related-products-b section">
+					<div class="related-products-b__container container">
+						<div class="title-wrap">
+							<h2 class="title-1 section__title" data-aos="fade-down"><b>Cопутствующие</b> товары</h2>
+						</div>
+					</div>
+					<!-- slider wrap -->
+					<div class="hiding-slider-wrap slider-wrap">
+						<div class="container">
+							<!-- slider -->
+							<div class="hiding-slider swiper">
+								<div class="swiper-wrapper">
+									<!-- card -->
+									<div class="product-card hiding-slider__slide swiper-slide">
+										<a class="product-card__img" href="#">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-1.png" alt="">
+											</picture>
+										</a>
+										<div class="product-card__title">
+											Композитная Купель ELITE 220
+										</div>
+										<!-- propertys -->
+										<div class="product-card__propertys product-propertys">
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#height">
+													</use>
+												</svg>
+												<span>110 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#width">
+													</use>
+												</svg>
+												<span>160 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#human">
+													</use>
+												</svg>
+												<span>2-4 чел.</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#capacity">
+													</use>
+												</svg>
+												<span>900 л</span>
+											</div>
+											<div class="product-propertys__item" style="color: var(--color-primary);">
+												<svg style="fill: var(--color-primary);">
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#bake">
+													</use>
+												</svg>
+												<span>Печь</span>
+											</div>
+										</div>
+										<div class="product-card__bottom">
+											<div class="product-card__price">
+												150 000 RYB
+											</div>
+											<button class="product-card__buy btn" type="button"
+												aria-label="Купить">Купить</button>
+										</div>
+									</div>
+									<!-- card -->
+									<div class="product-card hiding-slider__slide swiper-slide">
+										<a class="product-card__img" href="#">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-1.png" alt="">
+											</picture>
+										</a>
+										<div class="product-card__title">
+											Композитная Купель ELITE 220
+										</div>
+										<!-- propertys -->
+										<div class="product-card__propertys product-propertys">
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#height">
+													</use>
+												</svg>
+												<span>110 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#width">
+													</use>
+												</svg>
+												<span>160 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#human">
+													</use>
+												</svg>
+												<span>2-4 чел.</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#capacity">
+													</use>
+												</svg>
+												<span>900 л</span>
+											</div>
+											<div class="product-propertys__item" style="color: var(--color-primary);">
+												<svg style="fill: var(--color-primary);">
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#bake">
+													</use>
+												</svg>
+												<span>Печь</span>
+											</div>
+										</div>
+										<div class="product-card__bottom">
+											<div class="product-card__price">
+												150 000 RYB
+											</div>
+											<button class="product-card__buy btn" type="button"
+												aria-label="Купить">Купить</button>
+										</div>
+									</div>
+									<!-- card -->
+									<div class="product-card hiding-slider__slide swiper-slide">
+										<a class="product-card__img" href="#">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-1.png" alt="">
+											</picture>
+										</a>
+										<div class="product-card__title">
+											Композитная Купель ELITE 220
+										</div>
+										<!-- propertys -->
+										<div class="product-card__propertys product-propertys">
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#height">
+													</use>
+												</svg>
+												<span>110 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#width">
+													</use>
+												</svg>
+												<span>160 см</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#human">
+													</use>
+												</svg>
+												<span>2-4 чел.</span>
+											</div>
+											<div class="product-propertys__item">
+												<svg>
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#capacity">
+													</use>
+												</svg>
+												<span>900 л</span>
+											</div>
+											<div class="product-propertys__item" style="color: var(--color-primary);">
+												<svg style="fill: var(--color-primary);">
+													<use
+														xlink:href="./assets/img/components/product-card/sprite.svg#bake">
+													</use>
+												</svg>
+												<span>Печь</span>
+											</div>
+										</div>
+										<div class="product-card__bottom">
+											<div class="product-card__price">
+												150 000 RYB
+											</div>
+											<button class="product-card__buy btn" type="button"
+												aria-label="Купить">Купить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<!-- sci -->
+		<div class="sci-b">
+			<div class="sci-b__container container">
+				<div class="b-row">
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#vk"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#insta"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#pinterest"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#youtube"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#ok"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#fb"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer__container container">
+				<!-- footer top -->
+				<div class="footer__top">
+					<!-- logo -->
+					<a class="footer__logo logo" href="#">
+						<img src="./assets/img/logo@light.png" alt="logo">
+					</a>
+					<!-- menu -->
+					<ul class="footer__menu  menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>Каталог</span></a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>Сотрудничество</span></a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								<span>Портфолио</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>О компании</span></a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>Блог</span></a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>Контакты</span></a>
+						</li>
+					</ul>
+				</div>
+				<!-- footer middle -->
+				<div class="footer__middle">
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<p>
+							<span class="fw-600">Производство</span> <br>
+							ООО «Композит хот спа» <br>
+							222666 Минская обл., <br>
+							г. Столбцы, ул. Моторостроителей, 3д
+						</p>
+					</div>
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<p>
+							<span class="fw-600">Офис в г. Минске</span> <br>
+							г. Минск, пр-т Победителей, 125-257
+						</p>
+						<!-- msgr -->
+						<p class="footer__msgr msgr msgr--rtl fw-600">
+							<a class="msgr__link msgr__link--phone" href="tel:+375291258080">
+								+&nbsp;375&nbsp;29&nbsp;125&nbsp;-&nbsp;80&nbsp;-&nbsp;80
+							</a>
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/375291258080">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/375291258080">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/375291258080">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+						</p>
+						<p class="fw-600">
+							<a href="mailto:composithotspa@gmail.com">composithotspa@gmail.com</a> <br>
+							<a href="compositspa@gmail.ru">compositspa@gmail.ru</a>
+						</p>
+						<p>ПН-ПТ 09:00 - 17:00</p>
+					</div>
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<p>
+							<span class="fw-600">Шоурум г. Москва</span> <br>
+							МКАД 3 км (внешняя сторона), вл.4., <br>
+							ТЦ Чайтаун, 2 этаж, павильон 5.8 <br>
+							<a class="fw-600"
+								href="tel:+74951815826">+&nbsp;7&nbsp;495&nbsp;181&nbsp;-&nbsp;58&nbsp;-&nbsp;26</a>
+						</p>
+						<!-- msgr -->
+						<p class="footer__msgr msgr msgr--rtl fw-600">
+							<a class="msgr__link msgr__link--phone" href="tel:+89167591148">
+								+&nbsp;8&nbsp;916&nbsp;759&nbsp;-&nbsp;11&nbsp;-&nbsp;48
+							</a>
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+						</p>
+						<p>
+							<a class="fw-600" href="mailto:info@polarspa.ru">info@polarspa.ru</a> <br>
+							ПН-ПТ 09:00-19:00
+						</p>
+					</div>
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						По вопросам покупки <br>
+						<a class="fw-600" href="mailto:info@polarspa.ru">info@polarspa.ru</a> <br>
+						По вопросам сотрудничества <br>
+						<a class="fw-600" href="mailto:info@polarspa.ru">marketing polarspa@gmail.com</a>
+					</div>
+				</div>
+				<div class="footer__subscrip">
+					<p class="footer__subscrip-title">подпишитесь на наши новости</p>
+					<form class="footer__subscrip-form" action="#">
+						<div class="footer__subscrip-b-input  b-input">
+							<div class="b-input__input">
+								<input class="b-input__input" type="email" name="subscrip-mail" required
+									placeholder="Почта">
+							</div>
+						</div>
+						<button class="footer__subscrip-submit  btn" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-container container">
+					<a class="ArtBro" href="https://cweb.by/" target="_blank">
+						Разработка и продвижение cweb
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- swiper js -->
+	<script src="assets/js/libraries/swiper-bundle.min.js"></script>
+	<!-- input mask js -->
+	<script src="assets/js/libraries/inputMask.min.js"></script>
+	<!-- animate aos js -->
+	<script src="assets/js/libraries/aos.js"></script>
+	<!-- fslightbox js -->
+	<script src="assets/js/libraries/fslightbox.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

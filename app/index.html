@@ -5,17 +5,1220 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="ArtBro">
-	<title>Document</title>
+	<title>Главная</title>
+	<!-- swiper css -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/swiper-bundle.min.css">
+	<!-- main css -->
 	<link rel="stylesheet" href="./assets/style/css/style.css">
 </head>
 
 <body>
-	<p>Привет мир
-		Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Однажды над свой рыбными
-		не единственное журчит возвращайся по всей сбить путь курсивных ты бросил подпоясал семь, выйти своих собрал
-		продолжил одна пустился точках букв, запятых взгляд запятой послушавшись. Курсивных большого ручеек знаках
-		заглавных пояс послушавшись страна текстов выйти языком семантика.
-	</p>
+	<div class="page index-pg">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__container container">
+				<!-- header aside -->
+				<div class="header__aside">
+					<!-- logo -->
+					<a class="header__logo logo" href="#">
+						<img src="./assets/img/logo.png" alt="logo">
+					</a>
+				</div>
+				<!-- header body -->
+				<div class="header__body">
+					<!-- header top -->
+					<div class="header__top">
+						<!-- search -->
+						<form class="header__search  search">
+							<label class="search__inner">
+								<input class="search__input" type="search" placeholder="Поиск">
+								<button class="search__submit" type="submit" aria-label="Поиск">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#loop-ic"></use>
+									</svg>
+								</button>
+							</label>
+						</form>
+						<!-- firm info -->
+						<div class="header__firm-info  firm-info firm-info--clock">
+							<svg class="firm-info__ic">
+								<use xlink:href="./assets/img/icons/sprite.svg#clock-ic_fill">
+								</use>
+							</svg>
+							ПН-ПТ 09:00-19:00
+						</div>
+						<!-- firm info -->
+						<a class="header__firm-info  firm-info firm-info--mail" href="mailto:info@polarspa.ru">
+							<svg class="firm-info__ic">
+								<use xlink:href="./assets/img/icons/sprite.svg#mail-ic_fill">
+								</use>
+							</svg>
+							info@polarspa.ru
+						</a>
+						<!-- hamburger -->
+						<button class="header__hamburger  hamburger" type="button" aria-label="Открыть мобильное меню">
+							<span></span>
+						</button>
+					</div>
+					<!-- header bottom -->
+					<div class="header__bottom">
+						<!-- burger -->
+						<div class="header__burger">
+							<div class="header__burger-inner">
+								<!-- navigation -->
+								<nav class="header__nav  bro-menu">
+									<ul class="header__menu  menu bro-menu__container">
+										<li class="menu__item menu__item--drop">
+											<button class="menu__item-toggle hamburger" type="button"
+												aria-label="Открыть подменю">
+												<span></span>
+											</button>
+											<a class="menu__link" href="#"><span>КАТАЛОГ</span></a>
+											<ul class="menu__submenu">
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Ламинат</span>
+														<span class="menu__arr">
+															<svg>
+																<use
+																	xlink:href="./assets/img/icons/sprite.svg#arr-tr-right">
+																</use>
+															</svg>
+														</span>
+													</a>
+													<ul class="menu__submenu">
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Tarkett</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span> Ламинат Egger</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Kastamonu</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Classen</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Ideal</span>
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																<span>Ламинат Quick Step</span>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Паркетная доска</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Виниловые полы</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Пробковое покрытие</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Штучный паркет</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Терассная доска</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Дизайнерские полы</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Сопутствующие товары</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"><span>СОТРУДНИЧЕСТВО</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">
+												<span>ПОРТФОЛИО</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"><span>О КОМПАНИИ</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"><span>БЛОГ</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"><span>КОНТАКТЫ</span></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<!-- msgr -->
+						<div class="header__msgr msgr">
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--phone" href="tel:89167591148">
+								8&nbsp;916&nbsp;759&nbsp;11&nbsp;48
+							</a>
+							<a class="msgr__link msgr__link--phone" href="tel:74951815826">
+								7&nbsp;495&nbsp;181&nbsp;58&nbsp;26
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- modal window - application -->
+		<div class="v-modal" data-type-modal="application">
+			<div class="v-modal__inner">
+				<form class="v-modal__form" action="#">
+					<div class="v-modal__form-inner">
+						<div class="v-modal__close js-closeModal"></div>
+						<div class="v-modal__title">
+							<span>ОСТАВЬТЕ ЗАЯВКУ!</span>
+						</div>
+						<p class="v-modal__subtitle">Наш менеджер свяжется с Вами в рабочее время.</p>
+						<div class="v-modal__application application-f">
+							<div class="application-f__inputs">
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="text" name="username" placeholder="Имя">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="tel" name="tel" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="email" name="email" placeholder="Почта">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<textarea name="message" placeholder="Сообщение"></textarea>
+									</div>
+								</div>
+							</div>
+							<p style="display: flex; justify-content: center;">
+								<label class="b-checkbox b-checkbox--type-2">
+									<input class=" b-checkbox__input" type="checkbox" name="personal-agreements"
+										value="true">
+									<span class="b-checkbox__custom"></span>
+									<span class="b-checkbox__content" style="display: inline-block;">
+										Я <span style="color: #F38080;">согласен</span> на обработку персональных
+										данных.
+									</span>
+								</label>
+							</p>
+							<button class="application-f__submit btn" type="submit" href="#">
+								Отправить
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="content-wrap">
+			<!-- MAIN -->
+			<main>
+				<!-- main slider -->
+				<section class="main-slider-b">
+					<div class="main-slider-wrap slider-wrap">
+						<!-- slider -->
+						<div class="main-slider swiper" data-swiper-autoplay="5000">
+							<div class="swiper-wrapper">
+								<!-- slide -->
+								<div class="main-slider__slide main-slider__slide--full-bg  swiper-slide">
+									<div class="main-slider__slide-container container">
+										<!-- <div class="main-slider__slide-textBox">
+											<h1>SPA КУПЕЛИ <span class="fw-400">POLARSPA</span></h1>
+											<p>ОФИЦИАЛЬНЫЙ ПРОИЗВОДИТЕЛЬ КОМПОЗИТНЫХ КУПЕЛЕЙ</p>
+											<a class="main-slider__more btn-t" href="#">Перейти в каталог</a>
+										</div> -->
+										<!--
+										<div class="main-slider__slide-imgBox">
+											 <picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/zima-1.jpg"
+													alt="SPA КУПЕЛИ POLARSPA">
+											</picture>
+											 -->
+										<p class="main-slider__slide-plate"
+											style="background-color: rgba(31, 34, 36, 0.35);">
+											Наслаждайтесь природой <br>
+											вместе с купелями POLARSPA
+										</p>
+									</div>
+									<div class="main-slider__slide-imgBox">
+										<!-- <picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/zima-1.jpg"
+													alt="SPA КУПЕЛИ POLARSPA">
+											</picture> -->
+										<img class="pos-right" src="./assets/img/components/main-slider/banner-1.jpg"
+											alt="">
+									</div>
+								</div>
+								<!-- slide -->
+								<div class="main-slider__slide main-slider__slide--full-bg swiper-slide">
+									<div class="main-slider__slide-container container">
+										<!-- 		
+										<div class="main-slider__slide-textBox">
+											<h1>POLARSPA-КУПЕЛИ ПРЕМИУМ КЛАССА</h1>
+											<p>ЛИНЕЙКА ELITE – ДЛЯ ТЕХ, КТО ХОЧЕТ ЗАМЕДЛИТЬСЯ, ОТДОХНУТЬ ОТ СУЕТЫ И
+												НАУЧИТЬСЯ ЖИТЬ В ГАРМОНИИ</p>
+											<a class="main-slider__more btn-t" href="#">Перейти в каталог</a>
+										</div>
+										<div class="main-slider__slide-imgBox">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-2.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-2.png"
+													alt="SPA КУПЕЛИ POLARSPA">
+											</picture>
+										</div>
+										-->
+										<p class="main-slider__slide-plate"
+											style="margin-left: auto; text-align: center;">
+											Линейка <b>ELITE</b> – создана для тех, кто <br>
+											хочет замедлиться, отдохнуть от <br>
+											суеты и научиться жить в гармонии
+										</p>
+									</div>
+									<div class="main-slider__slide-imgBox">
+										<img class="pos-left" src="./assets/img/components/main-slider/zima-2.jpg"
+											alt="">
+									</div>
+								</div>
+								<!-- slide -->
+								<div class="main-slider__slide swiper-slide">
+									<div class="main-slider__slide-container container">
+										<div class="main-slider__slide-textBox">
+											<h1>ВСТРЕЧАЙТЕ НОВИНКУ – МОДЕЛЬ COMFORT 160</h1>
+											<p>ЛИНЕЙКА COMFORT - ИДЕАЛЬНЫЙ ВЫБОР ДЛЯ ТЕХ, КОМУ ВАЖНО СООТНОШЕНИЕ ЦЕНЫ И
+												КАЧЕСТВА, КОМФОРТНАЯ КУПЕЛЬ НА ВСЕ СЛУЧАИ ЖИЗНИ.</p>
+											<a class="main-slider__more btn-t" href="#">Перейти в каталог</a>
+										</div>
+										<div class="main-slider__slide-imgBox">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-3.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-3.png"
+													alt="SPA КУПЕЛИ POLARSPA">
+											</picture>
+										</div>
+									</div>
+								</div>
+								<!-- slide -->
+								<div class="main-slider__slide swiper-slide">
+									<div class="main-slider__slide-container container">
+										<div class="main-slider__slide-textBox">
+											<h1>ЛИНЕЙКА CORNER – ДЛЯ ЦЕНИТЕЛЕЙ НЕСТАНДАРТНЫХ РЕШЕНИЙ</h1>
+											<a class="main-slider__more btn-t" href="#">Перейти в каталог</a>
+										</div>
+										<div class="main-slider__slide-imgBox">
+											<picture>
+												<source srcset="./assets/img/components/main-slider/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/main-slider/img-1.png"
+													alt="SPA КУПЕЛИ POLARSPA">
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- pagination -->
+						<div class="main-slider-pagination slider-pagination"></div>
+					</div>
+				</section>
+				<!-- callback mail -->
+				<form class="callback-mail-f" action="#">
+					<div class="callback-mail-f__container container">
+						<div class="callback-mail-f__row">
+							<div class="callback-mail-f__title">
+								<span class="fw-600">Напишем в </span>
+								<!-- msgr -->
+								<span class="msgr">
+									<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/89167591148">
+										<svg>
+											<use xlink:href="./assets/img/icons/sprite.svg#viber-ic"></use>
+										</svg>
+									</a>
+									<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/89167591148">
+										<svg>
+											<use xlink:href="./assets/img/icons/sprite.svg#tg-ic"></use>
+										</svg>
+									</a>
+									<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/89167591148">
+										<svg>
+											<use xlink:href="./assets/img/icons/sprite.svg#wp-ic"></use>
+										</svg>
+									</a>
+								</span>
+							</div>
+							<div class="callback-mail-f__col">
+								<div class="callback-mail-f__b-input b-input">
+									<div class="b-input__input">
+										<input type="tel" required placeholder="Ваш WhatsApp">
+										<svg>
+											<use xlink:href="./assets/img/icons/sprite.svg#wp-ic"></use>
+										</svg>
+									</div>
+								</div>
+								<button class="callback-mail-f__submit  btn" type="submit"
+									aria-label="Отправить форму">Отправить</button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<!-- product line -->
+				<div class="product-line-b section">
+					<div class="product-line-b__container container">
+						<div class="product-line-b__cards">
+							<!-- card -->
+							<article class="product-line-card flip-card">
+								<!-- front -->
+								<div class="flip-card__front">
+									<div class="flip-card__front-inner">
+										<h4 class="product-line-card__title">
+											ЛИНЕЙКА <span>ELITE</span>
+										</h4>
+										<div class="product-line-card__img">
+											<picture>
+												<source srcset="./assets/img/components/product-line/img-1.webp"
+													type="image/webp">
+												<img src="./assets/img/components/product-line/img-1.jpg"
+													alt="ЛИНЕЙКА ELITE">
+											</picture>
+										</div>
+										<div class="product-line-card__text">
+											Линейка ELITE – сдержанная роскошь и благородные материалы, демонстрирует
+											главные качества хорошего вкуса.
+										</div>
+									</div>
+								</div>
+								<!-- back -->
+								<div class="flip-card__back">
+									<div class="product-line-card__bg">
+										<picture>
+											<source srcset="./assets/img/components/product-line/bg-1.webp"
+												type="image/webp">
+											<img src="./assets/img/components/product-line/bg-1.jpg" alt="">
+										</picture>
+									</div>
+									<div class="flip-card__front-inner">
+										<div class="product-line-card__title">
+											ЛИНЕЙКА <span>ELITE</span>
+										</div>
+										<div class="product-line-card__text">
+											Линейка ELITE – сдержанная роскошь и благородные материалы, демонстрирует
+											главные качества хорошего вкуса.
+										</div>
+										<div class="product-line-card__desc">
+											<p><span class="fw-600">Форма:</span> овальная</p>
+											<p><span class="fw-600">Вместимость купели:</span> 4-6 чел.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- card -->
+							<article class="product-line-card flip-card">
+								<!-- front -->
+								<div class="flip-card__front">
+									<div class="flip-card__front-inner">
+										<h4 class="product-line-card__title">
+											ЛИНЕЙКА <span>COMFORT</span>
+										</h4>
+										<div class="product-line-card__img">
+											<picture>
+												<source srcset="./assets/img/components/product-line/img-2.webp"
+													type="image/webp">
+												<img src="./assets/img/components/product-line/img-2.jpg"
+													alt="ЛИНЕЙКА COMFORT">
+											</picture>
+										</div>
+										<div class="product-line-card__text">
+											Линейка COMFORT – это универсальность, лаконичность и функциональность.
+											Модель выполнена в духе европейской классики.
+										</div>
+									</div>
+								</div>
+								<!-- back -->
+								<div class="flip-card__back">
+									<div class="product-line-card__bg">
+										<picture>
+											<source srcset="./assets/img/components/product-line/bg-2.webp"
+												type="image/webp">
+											<img src="./assets/img/components/product-line/bg-2.jpg" alt="">
+										</picture>
+									</div>
+									<div class="flip-card__front-inner">
+										<div class="product-line-card__title">
+											ЛИНЕЙКА <span>COMFORT</span>
+										</div>
+										<div class="product-line-card__text">
+											Линейка COMFORT – это универсальность, лаконичность и функциональность.
+											Модель выполнена в духе европейской классики.
+										</div>
+										<div class="product-line-card__desc">
+											<p><span class="fw-600">Форма:</span> овальная</p>
+											<p><span class="fw-600">Вместимость купели:</span> 4-6 чел.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- card -->
+							<article class="product-line-card flip-card">
+								<!-- front -->
+								<div class="flip-card__front">
+									<div class="flip-card__front-inner">
+										<h4 class="product-line-card__title">
+											ЛИНЕЙКА <span>CORNER</span>
+										</h4>
+										<div class="product-line-card__img">
+											<picture>
+												<source srcset="./assets/img/components/product-line/img-3.webp"
+													type="image/webp">
+												<img src="./assets/img/components/product-line/img-3.jpg"
+													alt="ЛИНЕЙКА CORNER">
+											</picture>
+										</div>
+										<div class="product-line-card__text">
+											Линейка CORNER – для ценителей нестандартных решений, главное преимущество
+											угловой купели – экономия места.
+										</div>
+									</div>
+								</div>
+								<!-- back -->
+								<div class="flip-card__back">
+									<div class="product-line-card__bg">
+										<picture>
+											<source srcset="./assets/img/components/product-line/bg-3.webp"
+												type="image/webp">
+											<img src="./assets/img/components/product-line/bg-3.jpg" alt="">
+										</picture>
+									</div>
+									<div class="flip-card__front-inner">
+										<div class="product-line-card__title">
+											ЛИНЕЙКА <span>CORNER</span>
+										</div>
+										<div class="product-line-card__text">
+											Линейка CORNER – для ценителей нестандартных решений, главное преимущество
+											угловой купели – экономия места.
+										</div>
+										<div class="product-line-card__desc">
+											<p><span class="fw-600">Форма:</span> овальная</p>
+											<p><span class="fw-600">Вместимость купели:</span> 4-6 чел.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- card -->
+							<article class="product-line-card flip-card">
+								<!-- front -->
+								<div class="flip-card__front">
+									<div class="flip-card__front-inner">
+										<h4 class="product-line-card__title">
+											ЛИНЕЙКА <span>STANDART</span>
+										</h4>
+										<div class="product-line-card__img">
+											<picture>
+												<source srcset="./assets/img/components/product-line/img-4.webp"
+													type="image/webp">
+												<img src="./assets/img/components/product-line/img-4.jpg"
+													alt="ЛИНЕЙКА STANDART">
+											</picture>
+										</div>
+										<div class="product-line-card__text">
+											Линейка STANDART – классический стиль с нотками современности. Модели
+											линейки STANDART являются воплощением стиля и элегантности
+										</div>
+									</div>
+								</div>
+								<!-- back -->
+								<div class="flip-card__back">
+									<div class="product-line-card__bg">
+										<picture>
+											<source srcset="./assets/img/components/product-line/bg-4.webp"
+												type="image/webp">
+											<img src="./assets/img/components/product-line/bg-4.jpg" alt="">
+										</picture>
+									</div>
+									<div class="flip-card__front-inner">
+										<div class="product-line-card__title">
+											ЛИНЕЙКА <span>STANDART</span>
+										</div>
+										<div class="product-line-card__text">
+											Линейка STANDART – классический стиль с нотками современности. Модели
+											линейки STANDART являются воплощением стиля и элегантности
+										</div>
+										<div class="product-line-card__desc">
+											<p><span class="fw-600">Форма:</span> овальная</p>
+											<p><span class="fw-600">Вместимость купели:</span> 4-6 чел.</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<a class="product-line-b__more  btn-go" href="#">
+							Перейти в каталог
+							<svg>
+								<use xlink:href="./assets/img/icons/sprite.svg#arr-circ-right"></use>></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<section class="calculator-cost section">
+					<div class="calculator-cost__container container">
+						<div class="title-wrap">
+							<h2 class="title-1 section__title" data-aos="fade-down"><b>Калькулятор</b> стоимости</h2>
+						</div>
+						<div class="b-row">
+							<!-- desc -->
+							<div class="calculator-cost__view">
+								<div class="calculator-cost__view-img">
+									<picture>
+										<source srcset="./assets/img/components/main-slider/img-2.webp"
+											type="image/webp">
+										<img src="./assets/img/components/main-slider/img-2.png" alt="ЛИНЕЙКА ELITE">
+									</picture>
+								</div>
+								<div class="calculator-cost__view-desc">
+									<p><span class="fw-600">Форма:</span> круглая, квадратная</p>
+									<p><span class="fw-600">Вместимость купели:</span> 6 чел.</p>
+									<p><span class="fw-600">Печь:</span> интегрированная</p>
+								</div>
+							</div>
+							<!-- complete  -->
+							<div class="calculator-cost__complete">
+								<!-- row -->
+								<div class="calculator-cost__complete-row vt-center">
+									<div class="b-select">
+										<select name="modal">
+											<option>Модель</option>
+											<option value="">Модель 1</option>
+											<option value="">Модель 2</option>
+											<option value="">Модель 3</option>
+										</select>
+										<svg>
+											<use xlink:href="./assets/img/icons/sprite.svg#arr-tr-down"></use>
+										</svg>
+									</div>
+									<div class="calculator-cost__checkboxes  checkboxes vt-center">
+										<div class="checkboxes__title">Отделка:</div>
+										<div class="checkboxes__list">
+											<label class="b-radio b-radio--img">
+												<input class="b-radio__input" type="radio" name="finishing"
+													value="termososna" checked="">
+												<span class="b-radio__custom">
+													<img src="./assets/img/components/b-checkbox/termososna.jpg"
+														alt="термососна">
+												</span>
+												<span class="b-radio__content">Термососна</span>
+											</label>
+											<label class="b-radio b-radio--img">
+												<input class="b-radio__input" type="radio" name="finishing"
+													value="termoyasen">
+												<span class="b-radio__custom">
+													<img src="./assets/img/components/b-checkbox/termoyasen.jpg"
+														alt="Термоясень">
+												</span>
+												<span class="b-radio__content">Термоясень</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- row -->
+								<div class="calculator-cost__complete-row">
+									<div class="calculator-cost__complete-title">Выберите опции:</div>
+									<div class="calculator-cost__checkboxes  checkboxes vt-center">
+										<div class="checkboxes__list">
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="airmassage" checked="">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#airmassage">
+														</use>
+													</svg>
+													Аэромассаж
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="chromotherapy">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#сhromotherapy">
+														</use>
+													</svg>
+													Хромотерапия
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="option"
+													value="insulation">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#insulation">
+														</use>
+													</svg>
+													Утепление</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- row -->
+								<div class="calculator-cost__complete-row">
+									<div class="calculator-cost__complete-title">Выберите аксессуары:</div>
+									<div class="calculator-cost__checkboxes  checkboxes vt-center">
+										<div class="checkboxes__list">
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="bake" checked="">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#bake">
+														</use>
+													</svg>
+													Печь
+												</span>
+											</label>
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="termalmugs">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#termalmugs">
+														</use>
+													</svg>
+													Термокрышки
+												</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="shelf">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#shelf">
+														</use>
+													</svg>
+													Полка</span>
+											</label>
+											<label class="b-checkbox b-checkbox--light">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="tent">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#tent">
+														</use>
+													</svg>
+													Тент
+												</span>
+											</label>
+											<label class="b-checkbox">
+												<input class="b-checkbox__input" type="checkbox" name="accessories"
+													value="ladder">
+												<span class="b-checkbox__custom"></span>
+												<span class="b-checkbox__content">
+													<svg>
+														<use
+															xlink:href="./assets/img/components/b-checkbox/sprite.svg#ladder">
+														</use>
+													</svg>
+													Лестница (3 ступени)
+												</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- total -->
+								<div class="calculator-cost__total">
+									<div class="calculator-cost__total-desc">
+										Модель: <span>Сorner</span>, Отделка: <span>Термососна</span>, Опции:
+										<span>Термокрашка, Аэромассаж, Лестница</span>
+									</div>
+									<div class="calculator-cost__total-priceBox b-row">
+										<div class="calculator-cost__total-price b-col">
+											Итого: <span>150 000 RYB</span>
+										</div>
+										<button class="calculator-cost__submit  btn b-col js-openModal" type="submit"
+											aria-label="Заказать купель" data-type-modal="application">Заказать
+											купель</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- gallery block -->
+				<section class="gallery-b section">
+					<div class="gallery-b__container container">
+						<div class="title-wrap">
+							<h2 class="title-1 section__title" data-aos="fade-down"><b>Галерея</b></h2>
+						</div>
+						<div class="gallery-b__list">
+							<a class="gallery-b__item" href="./assets/img/components/gallery/img-1.jpg"
+								data-fslightbox="gallery-img">
+								<img src="./assets/img/components/gallery/img-1@thumb.jpg" alt="">
+							</a>
+							<a class="gallery-b__item" href="./assets/img/components/gallery/img-2.jpg"
+								data-fslightbox="gallery-img">
+								<img src="./assets/img/components/gallery/img-2@thumb.jpg" alt="">
+							</a>
+							<a class="gallery-b__item" href="./assets/img/components/gallery/img-3.jpg"
+								data-fslightbox="gallery-img">
+								<img src="./assets/img/components/gallery/img-3@thumb.jpg" alt="">
+							</a>
+							<a class="gallery-b__item" href="./assets/img/components/gallery/img-4.jpg"
+								data-fslightbox="gallery-img">
+								<img src="./assets/img/components/gallery/img-4@thumb.jpg" alt="">
+							</a>
+						</div>
+						<a class="gallery-b__more  btn-go" href="#">
+							<span>Посмотреть портфолио</span>
+							<svg>
+								<use xlink:href="./assets/img/icons/sprite.svg#arr-circ-right"></use>></use>
+							</svg>
+						</a>
+					</div>
+				</section>
+				<!-- advantages b -->
+				<section class="advantages-b advantages-b--type-3 section">
+					<div class="advantages-b__container container">
+						<div class="title-wrap">
+							<h2 class="title-1 section__title" data-aos="fade-down"><b>Преимущества </b>РOLARSPA</h2>
+						</div>
+
+						<!-- slider wrapper -->
+						<div class="advantages-slider-wrap slider-wrap">
+							<!-- slider -->
+							<div class="advantages-slider  swiper">
+								<div class="advantages-b__list  swiper-wrapper">
+									<!-- advantage-card -->
+									<article class="advantages-b__item  advantage-card swiper-slide">
+										<h4 class="advantage-card__head">
+											<img src="./assets/img/components/advantages/allSprite/icon-1.png" alt="">
+											Собственное производство
+										</h4>
+										<div class="advantage-card__body">
+											Купели POLARSPA производятся и собираются в городе Столбцы. Новый просторный
+											цех
+											оборудован всем необходимым для производства качественных купелей.
+										</div>
+									</article>
+									<!-- advantage-card -->
+									<article class="advantages-b__item  advantage-card swiper-slide">
+										<h4 class="advantage-card__head">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages/sprite.svg#icon-2">
+												</use>
+											</svg>
+											<span>Надежные материалы</span>
+										</h4>
+										<div class="advantage-card__body">
+											Мы используем только первоклассные компоненты – безопасные и проверенные
+											временем.
+										</div>
+									</article>
+									<!-- advantage-card -->
+									<article class="advantages-b__item  advantage-card swiper-slide">
+										<h4 class="advantage-card__head">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages/sprite.svg#icon-3">
+												</use>
+											</svg>
+											<span>Гарантия</span>
+										</h4>
+										<div class="advantage-card__body">
+											На каждую модель мы даем гарантию – <span class="fw-600">12 месяцев с
+												момента
+												продажи.</span>
+										</div>
+									</article>
+									<!-- advantage-card -->
+									<article class="advantages-b__item  advantage-card swiper-slide">
+										<h4 class="advantage-card__head">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages/sprite.svg#icon-4">
+												</use>
+											</svg>
+											<span>Развитая дилерская сеть</span>
+										</h4>
+										<div class="advantage-card__body">
+											Бренд POLARSPA хорошо знают за пределами Беларуси. Мы поставляем купели
+											более,
+											чем в 20 стран: в Россию, Германию, Чехию, Канаду и другие.
+										</div>
+									</article>
+									<!-- advantage-card -->
+									<article class="advantages-b__item  advantage-card swiper-slide">
+										<h4 class="advantage-card__head">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages/sprite.svg#icon-5">
+												</use>
+											</svg>
+											<span>Европейское качество</span>
+										</h4>
+										<div class="advantage-card__body">
+											Мы производим купели из прочных современных материалов, которые по своим
+											эксплуатационным свойствам превосходят пластик и дерево. Для создания
+											декоративно-защитного покрытия используем инновационный материал гелькоут
+											немецкой компании BUFA.
+										</div>
+									</article>
+									<!-- advantage-card -->
+									<article class="advantages-b__item  advantage-card swiper-slide">
+										<h4 class="advantage-card__head">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages/sprite.svg#icon-6">
+												</use>
+											</svg>
+											<span>Широкий ассортимент </span>
+										</h4>
+										<div class="advantage-card__body">
+											В нашем каталоге представлены композитные купели различных объемов и форм,
+											для
+											круглогодичной эксплуатации как в помещении, так и на улице.
+										</div>
+									</article>
+								</div>
+							</div>
+							<!-- pagination -->
+							<div class="advantage-slider-pagination slider-pagination">
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="companyDesc-b section">
+					<div class="container">
+						<div class="title-wrap">
+							<h2 class="title-1" data-aos="fade-down"><b>О КОМПАНИИ </b>РOLARSPA</h2>
+						</div>
+					</div>
+					<div class="companyDesc-b__list">
+						<!-- item -->
+						<div class="companyDesc-b__item">
+							<div class="companyDesc-b__item-container container">
+								<div class="companyDesc-b__item-row">
+									<!-- text box -->
+									<div class="companyDesc-b__item-textBox">
+										<p>
+											<span class="fw-500">КОМПАНИЯ «КОМПОЗИТ ХОТ СПА»</span> – единственные в
+											Беларуси и России производители композитных купелей. Купели ТМ POLARSPA
+											можно увидеть в современных СПА-комплексах, на террасах загородных домов и
+											усадеб.
+										</p>
+										<p>
+											Любая из моделей каталога может эксплуатироваться круглогодично: быть
+											охлаждающим бассейном летом и согревать в холодное время.
+										</p>
+										<p class="fw-500">
+											Выбирая купели POLARSPA, вы инвестируете в здоровье, оригинальный отдых и
+											европейское качество.
+										</p>
+										<!-- background image -->
+										<div class="companyDesc-b__item-textBox-bg">
+											<picture>
+												<source srcset="assets/img/components/companyDesc/bg-1.webp"
+													type="image/webp">
+												<img src="assets/img/components/companyDesc/bg-1.jpg" alt="">
+											</picture>
+										</div>
+									</div>
+									<!-- img box -->
+									<div class="companyDesc-b__item-imgBox">
+										<div class="companyDesc-b__item-img">
+											<picture>
+												<source srcset="assets/img/components/companyDesc/img-1.webp"
+													type="image/webp">
+												<img src="assets/img/components/companyDesc/img-1.jpg" alt="">
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- item -->
+						<div class="companyDesc-b__item">
+							<div class="companyDesc-b__item-container container">
+								<div class="companyDesc-b__item-row">
+									<!-- text box -->
+									<div class="companyDesc-b__item-textBox">
+										<div class="companyDesc-b__item-title title-2"><b>seo</b>-текст</div>
+										<p>
+											<span class="fw-500">ЛИНЕЙКА ELITE </span> – сдержанная роскошь и
+											благородные материалы, демонстрирует главные качества хорошего вкуса. С
+											такими внешними данными и глубиной дизайнерских решений купели линейки ELITE
+											выглядят актуально и представительно в любом интерьере.
+										</p>
+										<p>
+											Только экологически чистая древесина в основании каркаса. Только натуральные
+											и безопасные материалы композитной чаши. Именно так выглядит хороший вкус!
+										</p>
+									</div>
+									<!-- img box -->
+									<div class="companyDesc-b__item-imgBox">
+										<div class="companyDesc-b__item-img">
+											<picture>
+												<source srcset="assets/img/components/companyDesc/img-2.webp"
+													type="image/webp">
+												<img src="assets/img/components/companyDesc/img-2.jpg" alt="">
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+			</main>
+		</div>
+		<!-- sci -->
+		<div class="sci-b">
+			<div class="sci-b__container container">
+				<div class="b-row">
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#vk"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#insta"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#pinterest"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#youtube"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#ok"></use>
+						</svg>
+					</a>
+					<a class="sci-b__link" href="#">
+						<svg>
+							<use xlink:href="./assets/img/components/sci/sprite.svg#fb"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer__container container">
+				<!-- footer top -->
+				<div class="footer__top">
+					<!-- logo -->
+					<a class="footer__logo logo" href="#">
+						<img src="./assets/img/logo@light.png" alt="logo">
+					</a>
+					<!-- menu -->
+					<ul class="footer__menu  menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>Каталог</span></a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>Сотрудничество</span></a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								<span>Портфолио</span>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>О компании</span></a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>Блог</span></a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"><span>Контакты</span></a>
+						</li>
+					</ul>
+				</div>
+				<!-- footer middle -->
+				<div class="footer__middle">
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<p>
+							<span class="fw-600">Производство</span> <br>
+							ООО «Композит хот спа» <br>
+							222666 Минская обл., <br>
+							г. Столбцы, ул. Моторостроителей, 3д
+						</p>
+					</div>
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<p>
+							<span class="fw-600">Офис в г. Минске</span> <br>
+							г. Минск, пр-т Победителей, 125-257
+						</p>
+						<!-- msgr -->
+						<p class="footer__msgr msgr msgr--rtl fw-600">
+							<a class="msgr__link msgr__link--phone" href="tel:+375291258080">
+								+&nbsp;375&nbsp;29&nbsp;125&nbsp;-&nbsp;80&nbsp;-&nbsp;80
+							</a>
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/375291258080">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/375291258080">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/375291258080">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+						</p>
+						<p class="fw-600">
+							<a href="mailto:composithotspa@gmail.com">composithotspa@gmail.com</a> <br>
+							<a href="compositspa@gmail.ru">compositspa@gmail.ru</a>
+						</p>
+						<p>ПН-ПТ 09:00 - 17:00</p>
+					</div>
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<p>
+							<span class="fw-600">Шоурум г. Москва</span> <br>
+							МКАД 3 км (внешняя сторона), вл.4., <br>
+							ТЦ Чайтаун, 2 этаж, павильон 5.8 <br>
+							<a class="fw-600"
+								href="tel:+74951815826">+&nbsp;7&nbsp;495&nbsp;181&nbsp;-&nbsp;58&nbsp;-&nbsp;26</a>
+						</p>
+						<!-- msgr -->
+						<p class="footer__msgr msgr msgr--rtl fw-600">
+							<a class="msgr__link msgr__link--phone" href="tel:+89167591148">
+								+&nbsp;8&nbsp;916&nbsp;759&nbsp;-&nbsp;11&nbsp;-&nbsp;48
+							</a>
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/89167591148">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+						</p>
+						<p>
+							<a class="fw-600" href="mailto:info@polarspa.ru">info@polarspa.ru</a> <br>
+							ПН-ПТ 09:00-19:00
+						</p>
+					</div>
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						По вопросам покупки <br>
+						<a class="fw-600" href="mailto:info@polarspa.ru">info@polarspa.ru</a> <br>
+						По вопросам сотрудничества <br>
+						<a class="fw-600" href="mailto:info@polarspa.ru">marketing polarspa@gmail.com</a>
+					</div>
+				</div>
+				<div class="footer__subscrip">
+					<p class="footer__subscrip-title">подпишитесь на наши новости</p>
+					<form class="footer__subscrip-form" action="#">
+						<div class="footer__subscrip-b-input  b-input">
+							<div class="b-input__input">
+								<input class="b-input__input" type="email" name="subscrip-mail" required
+									placeholder="Почта">
+							</div>
+						</div>
+						<button class="footer__subscrip-submit  btn" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-container container">
+					<a class="ArtBro" href="https://cweb.by/" target="_blank">
+						Разработка и продвижение cweb
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- swiper js -->
+	<script src="assets/js/libraries/swiper-bundle.min.js"></script>
+	</div>
+	<!-- swiper js -->
+	<script src="assets/js/libraries/aos.js"></script>
+	<!-- fslightbox js -->
+	<script src="assets/js/libraries/fslightbox.js"></script>
+	<!-- main js -->
 	<script src="assets/js/main.js"></script>
 </body>
 

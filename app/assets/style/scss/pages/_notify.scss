@@ -1,0 +1,106 @@
+.notify-pg {
+	.content-wrap {
+		padding-top: 6em;
+	}
+	main {
+		flex: 1;
+		text-align: center;
+
+		h1 {
+			margin-bottom: getEm(21, 64);
+			font-weight: 500;
+			font-size: 64px;
+			text-transform: uppercase;
+			color: var(--color-primary);
+		}
+
+		p {
+			font-weight: 300;
+			line-height: (22/18);
+			font-size: 18px;
+		}
+
+		.btn {
+			--fz: 16px;
+			margin-top: getEm(49, 16);
+			height: #{getEm(45, 16)};
+			border-radius: 30px;
+			font-weight: 600;
+			text-transform: uppercase;
+			min-width: 220px;
+		}
+	}
+
+	@include desctop-min {
+		.content-wrap {
+			padding-top: 2.6em;
+		}
+		main {
+			h1 {
+				font-size: 52px;
+			}
+		}
+	}
+
+	@include mobile {
+		.content-wrap {
+			padding-top: 3em;
+		}
+		main {
+			h1 {
+				font-size: 36px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+
+			.btn {
+				font-size: 14px;
+			}
+		}
+	}
+
+	@include tel {
+		main {
+			h1 {
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+.err-pg {
+	main {
+		h1 {
+			margin-bottom: 0;
+			font-weight: 200;
+			font-size: 144px;
+			line-height: (176/144);
+		}
+
+		p {
+			margin-top: 0;
+			font-weight: 500;
+		}
+	}
+
+	@include desctop-min {
+		main {
+			h1 {
+				font-size: 120px;
+			}
+		}
+	}
+
+	@include mobile {
+	}
+
+	@include tel {
+		main {
+			h1 {
+				font-size: 98px;
+			}
+		}
+	}
+}

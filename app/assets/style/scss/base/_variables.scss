@@ -1,29 +1,40 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~
-VARIABLES
-~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*==================== VARIABLES ====================*/
 
-$color-primary: #0749AA;
+// scss variables
+$hue-color: 165;
+$color-primary: #1a5546;
+$color-primary-lig: #316659;
+
+$color-secondary: #b5947b;
+$color-secondary-lig: #e4dcd5;
+$color-secondary-lighter: #ece0d6;
+
+$color-text: #333;
+$color-text-lig: #818181;
 
 :root {
 	/*font-family*/
-	--fm-1: "Roboto Condensed", sans-serif;
+	--fm-1: "Montserrat", sans-serif;
+	--fm-2: "PT Sans", sans-serif;
 
 	/*colors*/
 	--basic-black: #000;
 	--basick-dark: #333;
 	--basick-white: #fff;
-	
-	--color-primary: #{$color-primary};
-}
 
-//breakpoints
-$desctop: 1920;
-$desctop-mid: 1450;
-$desctop-min: 1170;
-$table: 970;
-$mobile: 768;
-$tel: 480;
+	--color-primary: #{$color-primary};
+	--color-primary-lig: #{$color-primary-lig};
+	--color-secondary: #{$color-secondary};
+	--color-secondary-lig: #{$color-secondary-lig};
+	--color-secondary-lighter: #{$color-secondary-lighter};
+	--color-text: #{$color-text};
+	--color-text-lig: #{$color-primary};
+	--color-primary-hsl: hsl(#{$hue-color}, 53%, 22%);
+
+	--scroll-bar-color: hsl(#{$hue-color}, 42%, 90%);
+	--scroll-thumb-color: hsl(#{$hue-color}, 42%, 70%);
+	--scroll-thumb-color-hover: hsl(#{$hue-color}, 42%, 60%);
+}
 
 /***********************Main*/
 $duration: 0.3s;
-

@@ -1,5 +1,5 @@
 const { src, dest, watch, parallel, series } = require('gulp');
-const scss = require('gulp-sass');
+const scss = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
@@ -12,7 +12,7 @@ const gcmq = require('gulp-group-css-media-queries');
 const babel = require('gulp-babel');
 
 function svgSprites() {
-	return src('app/assets/img/icons/svg/*.svg')
+	return src('app/assets/img/spriteSvg/unification/*.svg')
 		.pipe(svgSprite({
 			mode: {
 				stack: {
@@ -20,7 +20,7 @@ function svgSprites() {
 				}
 			}
 		}))
-		.pipe(dest('app/assets/img'))
+		.pipe(dest('app/assets/img/spriteSvg'))
 }
 
 function browsersync() {
@@ -90,7 +90,7 @@ function styles() {
 
 function stylesBuild() {
 	return src('app/assets/style/scss/main.scss')
-		.pipe(scss(/*{ outputStyle: 'compressed' }*/))
+		.pipe(scss({ outputStyle: 'compressed' }))
 		.pipe(concat('style.css'))
 		.pipe(autoprefixer({
 			overrideBrowserslist: ['last 5 version'],
@@ -113,11 +113,12 @@ function watching() {
 	watch(['app/assets/style/scss/**/*.scss'], styles);
 	watch(['app/assets/js/**/*.js', '!app/assets/js/main.js'], scripts);
 	watch(['app/*.html']).on('change', browserSync.reload);
-	watch(['app/assets/img/icons/svg/*.svg'], svgSprites);
+	watch(['app/assets/img/spriteSvg/unification/*.svg'], svgSprites);
 }
 
 exports.styles = styles;
 exports.stylesBuild = stylesBuild;
+exports.scriptsBuild = scriptsBuild;
 exports.svgSprite = svgSprites;
 exports.watching = watching;
 exports.browsersync = browsersync;

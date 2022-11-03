@@ -1,0 +1,27 @@
+/*==================== INDEX PAGE ====================*/
+.index-pg {
+	.content-wrap {
+		padding: 0;
+	}
+
+	.companyDesc-b {
+		padding-bottom: 0;
+	}
+
+	.calculator-cost,
+	.companyDesc-b,
+	.advantages-b {
+		margin-top: 10px;
+	}
+
+	@include mobile {
+		.calculator-cost,
+		.companyDesc-b {
+			margin-top: 15px;
+		}
+
+		.advantages-b {
+			margin-top: 20px;
+		}
+	}
+}
